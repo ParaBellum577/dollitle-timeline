@@ -1,14 +1,19 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import TimeLineComponent from "../pages/timeline";
 
-interface RouterProps {}
-
-const MainRouter: React.FC<RouterProps> = () => {
+const MainRouter: React.FC = () => {
   return (
-    <Routes>
-      <Route key="timeline" path="/timeline" element={<TimeLineComponent />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route
+          key="timeline"
+          path="/timeline"
+          element={<TimeLineComponent />}
+        />
+        <Route path="*" element={<Navigate to="/timeline" />} />
+      </Routes>
+    </>
   );
 };
 
