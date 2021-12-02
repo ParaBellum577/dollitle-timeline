@@ -3,17 +3,12 @@ import moment, { Moment } from "moment";
 import _ from "lodash";
 import styles from "./index.module.scss";
 import TimeLineListItem from "./timeline-list-item";
+import { TimelineItemData } from "../../types";
 
 const DATE_FORMAT = "YYYY-MM-DD";
 
 type Props = {
-  data: {
-    id: number;
-    title: string;
-    date: Moment;
-    timeFrom: string;
-    timeTo: string;
-  }[];
+  data: TimelineItemData[];
   selectedDate: Date;
 };
 

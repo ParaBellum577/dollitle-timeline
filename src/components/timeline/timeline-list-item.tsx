@@ -1,16 +1,11 @@
 import React, { memo, useMemo } from "react";
-import moment, { Moment } from "moment";
+import moment from "moment";
 import styles from "./index.module.scss";
 import { MIN_IN_HOUR, TIME_FORMAT } from "./constants";
+import { TimelineItemData } from "../../types";
 
 type Props = {
-  element: {
-    id: number;
-    title: string;
-    date: Moment;
-    timeFrom: string;
-    timeTo: string;
-  };
+  element: TimelineItemData;
 };
 
 const TimeLineListItem: React.FC<Props> = ({ element }) => {
@@ -22,8 +17,8 @@ const TimeLineListItem: React.FC<Props> = ({ element }) => {
 
   const elementWidth = useMemo(() => {
     return moment
-    .duration(moment(timeTo, TIME_FORMAT).diff(moment(timeFrom, TIME_FORMAT)))
-    .asMinutes();
+      .duration(moment(timeTo, TIME_FORMAT).diff(moment(timeFrom, TIME_FORMAT)))
+      .asMinutes();
   }, [timeFrom, timeTo]);
 
   return (
