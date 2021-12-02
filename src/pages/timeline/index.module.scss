@@ -5,10 +5,24 @@
   width: 100%;
   height: 100vh;
   .tableWrapper {
-    width: 80%;
-    overflow: scroll;
-    height: 500px;
-    border: 1px solid;
-    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > div {
+      width: 80%;
+      padding: 20px;
+      border: 5px solid #a49eb1;
+      &:first-child {
+        border-bottom: none;
+        border-radius: 12px 12px 0 0;
+      }
+    }
+    .table {
+      border-radius: 0 0 12px 12px;
+      overflow: scroll;
+      height: 500px;
+    }
   }
 }

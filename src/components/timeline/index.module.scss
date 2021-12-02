@@ -1,13 +1,16 @@
+$mainColor: #a49eb1;
+
 .widthContainer {
   width: 1440px;
 }
 .timelineHeader {
   height: 70px;
-  border-bottom: 1px dashed;
+  border-bottom: 1px dashed $mainColor;
   position: relative;
   .timelineHeaderTimestamp {
     position: absolute;
     top: 50px;
+    color: $mainColor;
   }
 }
 
@@ -19,7 +22,7 @@
   height: 60px;
   width: 100%;
   position: relative;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $mainColor;
   > div {
     position: absolute;
     display: flex;
@@ -27,9 +30,17 @@
     justify-content: center;
     top: 10px;
     height: 40px;
-    border: 1px solid #b65252;
-    background-color: bisque;
-    border-radius: 11px;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: #dcf6fe;
+    border-left: 2px solid #0d9cc9;
+    text-align: center;
+    color: #5f5577;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0;
+    white-space: nowrap;
     overflow: hidden;
     > span {
       font-size: 16px;
