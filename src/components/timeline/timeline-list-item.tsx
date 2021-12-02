@@ -23,7 +23,10 @@ const TimeLineListItem: React.FC<Props> = ({ element }) => {
 
   return (
     <div className={`${styles.timelineListItem} ${styles.widthContainer}`}>
-      <div style={{ left: `${elementPosition}px`, width: `${elementWidth}px` }}>
+      <div
+        id="time-line-element"
+        style={{ left: `${elementPosition}px`, width: `${elementWidth}px` }}
+      >
         <span>{element.title}</span>
       </div>
     </div>
