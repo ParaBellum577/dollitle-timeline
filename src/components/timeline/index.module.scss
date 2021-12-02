@@ -1,0 +1,39 @@
+.widthContainer {
+  width: 1440px;
+}
+.timelineHeader {
+  height: 70px;
+  border-bottom: 1px dashed;
+  position: relative;
+  .timelineHeaderTimestamp {
+    position: absolute;
+    top: 50px;
+  }
+}
+
+.timelineItemsList {
+  height: auto;
+}
+
+.timelineListItem {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid;
+  > div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    height: 40px;
+    border: 1px solid #b65252;
+    background-color: bisque;
+    border-radius: 11px;
+    overflow: hidden;
+    > span {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
