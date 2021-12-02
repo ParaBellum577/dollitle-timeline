@@ -4,8 +4,7 @@ import _ from "lodash";
 import styles from "./index.module.scss";
 import TimeLineListItem from "./timeline-list-item";
 import { TimelineItemData } from "../../types";
-
-const DATE_FORMAT = "YYYY-MM-DD";
+import { DATE_FORMAT } from "./constants";
 
 type Props = {
   data: TimelineItemData[];

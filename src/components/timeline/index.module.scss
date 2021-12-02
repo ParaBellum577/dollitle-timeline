@@ -29,7 +29,7 @@ $mainColor: #a49eb1;
     align-items: center;
     justify-content: center;
     top: 10px;
-    height: 40px;
+    height: 30px;
     border-radius: 12px;
     padding: 6px;
     background-color: #dcf6fe;
@@ -47,4 +47,17 @@ $mainColor: #a49eb1;
       font-weight: bold;
     }
   }
+}
+
+.datePickerInput {
+  background: #FFFFFF;
+  border: 1px solid #a49eb1;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #B0B0BC;
+  width: 200px;
+  height: 50px;
 }
